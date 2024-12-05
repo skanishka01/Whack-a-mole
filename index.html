@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Whack-a-Mole Game</title>
+</head>
+<body>
+    <h1 class="score">SCORE: <span>00</span></h1>
+    <h2 class="timer">TIME: <span>30</span> seconds</h2>
+    <br>
+    <div class="board">
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+    </div>
+    <div class="cursor"></div>
+
+    <!-- End Game Overlay -->
+    <div class="game-over" id="gameOver">
+        <img src="assets/game-over.webp" alt="Game Over Sticker" class="sticker">
+        <p class="message">Time's up! <br> Your final score is <span id="finalScore"></span>.</p>
+        <button style="font-size: 1em;" onclick="restartGame()">Play Again</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
